@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>CAW on 42 — a community discussion</title>
-<meta name="description" content="A community discussion about the possibility of deploying a new CAW on 42 Chain: a community-led CawActions, free name distribution for QL1 Name NFT holders, and a token design still in discussion. Planning / discussion stage — nothing has been decided or launched.">
+<meta name="description" content="A community discussion about the possibility of deploying a new CAW on 42 Chain: a community-led CawActions, free name distribution for QL1 Name NFT holders, and a token design still in discussion. The two tokens on the proposed route — cqCAW and 42CAW — have been deployed; the migration plan itself remains at the proposal / discussion stage.">
 <script>
   // Pre-paint theme: dark only when the shared key says so; white otherwise.
   try {
@@ -169,9 +169,15 @@
 
   <section class="card">
     <h2>Token design — under discussion</h2>
-    <p>The token design itself needs rethinking — but <strong>no new token will be deployed</strong>.
-      This is at the planning stage, in discussion with @QomLayerOne.</p>
-    <p><strong>The details have not been decided yet.</strong> Everything in this section is a direction
+    <p>The token design itself needs rethinking. Since this discussion began, two new tokens have
+      been deployed: <strong>cqCAW (Community qCAW)</strong> on QL1 and <strong>42CAW</strong> on
+      42 Chain — both at the same contract address,
+      0x21aDfA6EbAA11cC25C38AD6aA00302527c519ee8. Their supplies are fixed
+      (646,228,401,676,033.907898028447996533 and 666,666,666,666,666), with no further minting and
+      no admin, and the entire supply of each is held by one wallet:
+      0x2A455cF58739885E1665128937AC1a76cee8EF0f. The rest of the token design is still at the
+      planning stage, in discussion with @QomLayerOne.</p>
+    <p><strong>The details have not been decided yet.</strong> Everything below is a direction
       being considered — there is no concrete specification: no ratios, no rates, no caps, no steps,
       and no dates.</p>
     <p>An idea under consideration (not decided): a merge mechanism for the existing tokens — the
@@ -190,7 +196,11 @@
   <section class="card">
     <h2>One proposal: the eCAW → 42CAW route</h2>
     <p><strong>This is one proposal — not a decision.</strong> It was posted to the community on
-      Nov 15 for discussion. Nothing in it has been adopted, and nothing has been deployed.</p>
+      Nov 15 for discussion. Since then, the two tokens on the route — cqCAW and 42CAW — have been
+      deployed (Nov 16; see the status box below). The bridge and conversion steps have not been
+      built or started: the eCAW bridge is built but not deployed, the 42-side cqCAW and the
+      conversion are design-only, and no migration, conversion or airdrop has begun. Everything not
+      yet done remains a proposal.</p>
     <p><strong>The route:</strong> eCAW (Ethereum) → bridge → community qCAW (QL1) → bridge →
       community qCAW (42 Chain) → conversion → 42CAW (42 Chain). The community qCAW would be the
       carrier across both chains, and the conversion into 42CAW would happen last, on 42 Chain. The
@@ -200,9 +210,10 @@
       <li>The move from eCAW is one-way — there is no bridge back, and what migrates does not return.</li>
       <li>The eCAW collected through the migration would be sold, and the proceeds would fund
         42CAW's liquidity — stated upfront, by design.</li>
-      <li>The total supply of 42CAW would be fixed at exactly 666,666,666,666,666.</li>
+      <li>The total supply of 42CAW is fixed at exactly 666,666,666,666,666 (deployed Nov 16).</li>
       <li>The community qCAW is positioned to make up for the share of the existing qCAW that BE
-        controls (its supply benchmark is the BE-controlled cluster: about 646.2 trillion).</li>
+        controls (its supply benchmark is the BE-controlled cluster: about 646.2 trillion) — cqCAW
+        was deployed at exactly that benchmark, 646,228,401,676,033.907898028447996533.</li>
       <li>BE's wallets would not be accepted at the gate. The premise: BE will not move, and this
         design does not wait for him.</li>
       <li>For existing qCAW holders, the proposal is an airdrop of 42CAW (snapshot-based) instead
@@ -242,13 +253,17 @@
   </section>
 
   <div class="status">
-    <h2>Status: planning / discussion stage — nothing has launched</h2>
-    <p>There is no contract to use yet, and no date has been promised — the deployment itself has not
-      been decided. What exists today: the public discussion, the design notes, and her contracts in
-      testing. Next steps depend on the discussion.</p>
-    <p>One more honest note: out of caution over legal risk, the developer is holding back on
-      migrating CAW to 42 Chain by deploying new tokens. That idea is on hold for now, not
-      cancelled — the discussion continues.</p>
+    <h2>Status: two tokens deployed — the migration is not operating yet</h2>
+    <p>Deployed on Nov 16: cqCAW (Community qCAW) on QL1 and 42CAW on 42 Chain — at the same
+      contract address on both chains: 0x21aDfA6EbAA11cC25C38AD6aA00302527c519ee8. Their supplies
+      are fixed (646,228,401,676,033.907898028447996533 and 666,666,666,666,666), with no further
+      minting and no admin, and the entire supply of each is held by one wallet:
+      0x2A455cF58739885E1665128937AC1a76cee8EF0f.</p>
+    <p>The migration mechanisms are not operating yet: the eCAW bridge is built but not deployed,
+      the 42-side cqCAW and the conversion are design-only, and no migration, conversion or airdrop
+      has started. The CAW social deployment on 42 Chain (a community-led CawActions) has not
+      happened either, and no date has been promised. The overall plan remains at the proposal /
+      discussion stage, and how the 42CAW total is allocated is still undecided.</p>
   </div>
 
 </div>
@@ -305,10 +320,15 @@
 
   <section class="card">
     <h2>トークン設計——協議中</h2>
-    <p>トークン設計そのものを見直す必要があります。ただし、<strong>新しいトークンはデプロイしません</strong>。
-      現在は計画段階で、@QomLayerOne と話し合いをしています。</p>
-    <p><strong>詳細はまだ決まっていません。</strong>このセクションに書かれているのは、いずれも検討中の
-      方向性です。具体的な仕様はありません——比率、レート、上限、手順、期日は一切決まっていません。</p>
+    <p>トークン設計そのものを見直す必要があります。その後、2つの新しいトークンがデプロイされました：
+      QL1 上の <strong>cqCAW（Community qCAW）</strong>と 42 Chain 上の <strong>42CAW</strong> で、
+      コントラクトアドレスはどちらも 0x21aDfA6EbAA11cC25C38AD6aA00302527c519ee8 です。供給量は
+      固定（646,228,401,676,033.907898028447996533 枚と 666,666,666,666,666 枚）で、追加ミントは
+      なく、管理者権限もありません。全量は1つのウォレット
+      0x2A455cF58739885E1665128937AC1a76cee8EF0f が保有しています。それ以外のトークン設計は、
+      現在も計画段階で、@QomLayerOne と話し合いをしています。</p>
+    <p><strong>詳細はまだ決まっていません。</strong>以下に書かれているのは、いずれも検討中の
+      方向性です。具体的な仕様は決まっていません——比率、レート、上限、手順、期日は一切決まっていません。</p>
     <p>検討中のアイデア（未決定）：既存トークン（Ethereum 版と QL1 版の CAW）のマージの仕組み。
       マージは技術的には可能で、本当の設計課題は交換比率です。42 Chain 上にデプロイされた
       Ethereum 版 CAW を使って作る形も、候補の一つです。</p>
@@ -324,7 +344,10 @@
   <section class="card">
     <h2>案の1つ：eCAW → 42CAW のルート</h2>
     <p><strong>これは案の1つです——決定ではありません。</strong>11月15日にコミュニティへ投稿された
-      提案で、まだ何も採択されておらず、何もデプロイされていません。</p>
+      提案です。その後、ルート上の2つのトークン（cqCAW と 42CAW）はデプロイされました（11月16日、
+      下のステータス欄参照）。ただし、ブリッジと変換のステップはまだ構築・運用されていません：
+      eCAW ブリッジは作成済みですが未デプロイ、42 側の cqCAW と変換は設計のみで、移行・変換・
+      エアドロップは始まっていません。未実施の部分は、いずれも案のままです。</p>
     <p><strong>ルート：</strong>eCAW（Ethereum）→ ブリッジ → コミュニティ版 qCAW（QL1）→ ブリッジ →
       コミュニティ版 qCAW（42 Chain）→ 変換 → 42CAW（42 Chain）。コミュニティ版 qCAW が両チェーンを
       渡る運搬役となり、42CAW への変換は最後に 42 Chain 上で起きる想定です。途中のブリッジは同一
@@ -333,9 +356,10 @@
     <ul>
       <li>eCAW からの移行は一方通行とする案（戻るブリッジはない。移行したものは戻らない）</li>
       <li>移行で集まった eCAW は売却し、42CAW の流動性に充てる案——これは最初から明示する</li>
-      <li>42CAW の総供給量は 666,666,666,666,666 枚に固定する案</li>
+      <li>42CAW の総供給量は 666,666,666,666,666 枚に固定されました（11月16日にデプロイ済み）</li>
       <li>コミュニティ版 qCAW は、BE が支配する既存 qCAW の分を補う位置づけとする案（供給量の目安は
-        BE 支配クラスターの 646.2兆枚）</li>
+        BE 支配クラスターの 646.2兆枚）。cqCAW は、その目安どおり
+        646,228,401,676,033.907898028447996533 枚でデプロイされました</li>
       <li>BE のウォレットは入口で受け付けない案（前提：BE は動かない。この設計は彼を待たない）</li>
       <li>既存 qCAW の保有者には、変換ではなく 42CAW のエアドロップとする案（スナップショット方式）</li>
     </ul>
@@ -372,12 +396,17 @@
   </section>
 
   <div class="status">
-    <h2>現在の状態：計画・議論の段階——まだ何もローンチしていません</h2>
-    <p>まだ使えるコントラクトはなく、期日の約束もありません。デプロイ自体も、まだ決まっていません。
-      今日存在するのは、公開の議論、設計メモ、そしてテスト中の彼女のコントラクトです。
-      次のステップは議論次第です。</p>
-    <p>もう1つ正直な注記：法的リスクへの配慮から、開発者は新規トークンのデプロイによる CAW の
-      42 Chain への移行を足踏みしています。これは中止ではなく、当面の保留です。議論は続きます。</p>
+    <h2>現在の状態：2つのトークンはデプロイ済み——移行はまだ始まっていません</h2>
+    <p>11月16日にデプロイ済み：QL1 上の cqCAW（Community qCAW）と 42 Chain 上の 42CAW。
+      コントラクトアドレスは両チェーンとも 0x21aDfA6EbAA11cC25C38AD6aA00302527c519ee8 です。
+      供給量は固定（646,228,401,676,033.907898028447996533 枚と 666,666,666,666,666 枚）で、
+      追加ミントはなく、管理者権限もありません。全量は1つのウォレット
+      0x2A455cF58739885E1665128937AC1a76cee8EF0f が保有しています。</p>
+    <p>移行の仕組みは、まだ稼働していません：eCAW ブリッジは作成済みですが未デプロイで、
+      42 側の cqCAW と変換は設計のみ。移行・変換・エアドロップは始まっていません。
+      42 Chain 上の CAW ソーシャル（コミュニティ主導の CawActions）のデプロイもまだで、
+      期日の約束もありません。全体の計画は引き続き案・議論の段階で、42CAW の総量の配分も
+      まだ決まっていません。</p>
   </div>
 
 </div>
