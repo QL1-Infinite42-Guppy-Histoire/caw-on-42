@@ -1,28 +1,36 @@
 # CAW on 42
 
-A standalone record page for the community discussion about the possibility
-of deploying a new CAW on 42 Chain: a community-led CawActions on 42 Chain,
-free same-name distribution for existing QL1 name holders, one action ledger
-on 42 with QL1 kept as the historical record, and a token design that is
-still in discussion. The two tokens on the proposed route (cqCAW on QL1 and
-42CAW on 42 Chain) were deployed on Nov 16, 2026; the migration plan itself
-remains a proposal in discussion, and its mechanisms are not operating yet.
+A standalone record page for the community discussion about CAW's direction.
+On Nov 17, 2026, the direction was decided: CAW's main line is now a
+community hard fork of QL1 — a fork the community carries itself (MT will not
+execute it), taking over the control of names and issuance that the developer
+(BE) still holds. The 42 Chain migration is no longer the main line: by the
+user's decision, the whole 42 Chain effort — @QomLayerOne's (future is
+M🌙NE's) CAW Social contracts and that entire line — is unified under
+@QomLayerOne. The two tokens deployed for the proposed migration route
+(cqCAW on QL1 and 42CAW on 42 Chain, Nov 16, 2026) remain deployed; their
+migration/conversion plan is a past proposal, superseded by the fork
+decision.
 
 **Live site:** https://ql1-infinite42-guppy-histoire.github.io/caw-on-42/
 
 ## Status
 
+Direction decided (Nov 17, 2026); execution has not started, and no
+validator vote has been held yet. Under the fork's ground rules, balances,
+names and posts carry over as they are, no major change is made without the
+community's agreement (a vote), and the old chain continues.
+
 The two tokens are deployed: cqCAW (Community qCAW) on QL1 and 42CAW on
 42 Chain, both at 0x21aDfA6EbAA11cC25C38AD6aA00302527c519ee8, with fixed
 supplies (646,228,401,676,033.907898028447996533 and 666,666,666,666,666),
 no further minting and no admin, the entire supply of each held by
-0x2A455cF58739885E1665128937AC1a76cee8EF0f. The migration mechanisms are
-not operating yet — the eCAW bridge is built but not deployed, the 42-side
-cqCAW and the conversion are design-only, and no migration, conversion or
-airdrop has started. The CAW social deployment on 42 Chain has not been
-decided and no date has been promised. This page records the public
-discussion held in the QL1 CAW SocialFi Telegram group on Nov 14–15, 2026,
-and the current shape of the discussion.
+0x2A455cF58739885E1665128937AC1a76cee8EF0f. Their migration/conversion plan
+is superseded by the fork decision: the eCAW bridge is built but not
+deployed, the 42-side cqCAW and the conversion are design-only, and no
+migration, conversion or airdrop has started. This page records the public
+discussion held in the QL1 CAW SocialFi Telegram group and related groups
+on Nov 14–17, 2026, and the decision that came out of it.
 
 ## Notes
 

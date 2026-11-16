@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>CAW on 42 — a community discussion</title>
-<meta name="description" content="A community discussion about the possibility of deploying a new CAW on 42 Chain: a community-led CawActions, free name distribution for QL1 Name NFT holders, and a token design still in discussion. The two tokens on the proposed route — cqCAW and 42CAW — have been deployed; the migration plan itself remains at the proposal / discussion stage.">
+<meta name="description" content="The community's record of CAW's direction. On Nov 17, 2026, the direction was decided: CAW's main line is now a community hard fork of QL1 (direction decided; execution not started; no validator vote held yet), carried by the community. The 42 Chain effort is now unified under @QomLayerOne. cqCAW and 42CAW remain deployed (Nov 16); their migration/conversion plan is a past proposal.">
 <script>
   // Pre-paint theme: dark only when the shared key says so; white otherwise.
   try {
@@ -65,6 +65,8 @@
     padding:20px; margin:16px 0; box-shadow:var(--shadow);
   }
   h2 { font-size:20px; margin:0 0 12px; line-height:1.4; }
+  h3 { font-size:17px; margin:18px 0 8px; line-height:1.4; }
+  h3:first-child { margin-top:0; }
   p { margin:0 0 12px; }
   p:last-child { margin-bottom:0; }
   ul { margin:0 0 12px; padding-left:22px; }
@@ -121,13 +123,16 @@
 
   <div class="hero">
     <h1>CAW on 42</h1>
-    <p class="summary">A community discussion about the possibility of deploying a new CAW on 42 Chain —
-      with a community-led CawActions (the contract that records posts and actions) that no single
-      owner controls.</p>
+    <p class="summary">This page records the community's discussion about where CAW goes next.
+      On November 17, 2026, the direction was decided: CAW's main line is now a
+      <strong>community hard fork of QL1</strong> — a fork the community carries itself, to take over
+      the control of names and issuance that the developer (BE) still holds. The 42 Chain migration
+      is no longer the main line. <strong>Status: direction decided — execution has not started,
+      and no validator vote has been held yet.</strong></p>
     <div class="chips">
       <span class="chip">Developed by the community</span>
       <span class="chip">Not an official site</span>
-      <span class="chip">Planning / discussion stage</span>
+      <span class="chip">Direction decided Nov 17, 2026 — execution not started</span>
     </div>
     <blockquote class="charter">
       “On QL1, it was BE. On Ethereum, it was Gilgamesh. Both left their communities with a question
@@ -137,27 +142,92 @@
   </div>
 
   <section class="card">
-    <h2>Why 42</h2>
-    <p>On QL1, the CawActions contract belongs to BE (backend69): its source code is not public, and it
-      sits under his owner authority. The community can use it, but cannot verify it or change it.</p>
-    <p>The premise of this discussion: BE is not expected to act. Waiting for him is not a path.</p>
-    <p>BE deliberately left room — an unfinished margin — and a question for the community. That margin,
-      too, is part of his legacy. The answer the community is discussing is 42.</p>
-    <p>If the action ledger (the record of posts and actions) moves to 42 Chain, CAW would no longer
-      run on BE's closed-source CawActions — a community-led CawActions would take its place.</p>
+    <h2>The decision: a community hard fork of QL1</h2>
+    <p>On November 17, 2026, after the discussion recorded below, the direction was decided:
+      CAW proceeds on QL1, through a hard fork carried by the community. The problem this answers
+      is the one this page has named from the start — on QL1 today, the CawActions contract, name
+      management and the issuance mechanism all sit under the developer BE's authority: the source
+      code is not public, and no one else can fix or change anything.</p>
+    <p><strong>Where this stands, stated plainly:</strong> the direction is decided — nothing more
+      yet. Execution has not started. No validator vote has been held. MT will not execute the
+      fork; the community carries it. A fork only takes effect if validators and users move to it,
+      and the old chain continues either way.</p>
+    <p><strong>The 42 Chain side was settled by the same decision.</strong> The whole CAW on 42
+      effort — the CAW Social contracts that @QomLayerOne (future is M🌙NE) has been building and
+      testing on 42 Chain, and that entire line — is now unified under @QomLayerOne, and continues
+      under her. Those contracts were hers from the start; with this decision, the Guppy's Guide
+      side leaves the 42 Chain line entirely to her, and its own main line is the QL1 hard fork
+      above.</p>
   </section>
 
   <section class="card">
-    <h2>Ideas under discussion</h2>
+    <h2>What happens to qCAW in a hard fork?</h2>
+    <p>Right now, control over qCAW — name management, the issuance mechanism — sits entirely
+      with the developer (BE), and no one else can fix anything. A hard fork is a way to change
+      that.</p>
+    <p><strong>Your qCAW will not disappear</strong> — a fork carries over the chain's state as
+      it is. Your balance, your CAW name, and your posts all remain, and the same keys keep
+      working.</p>
+    <p><strong>What becomes possible on the forked chain</strong></p>
+    <ul>
+      <li>Moving the control the developer holds (such as name management) over to the community</li>
+      <li>Replacing contracts that were never verified with ones whose source code is public and verifiable</li>
+      <li>Letting the community re-decide the parts the developer still controls, such as how qCAW is issued and what backs it</li>
+      <li>Designing a gradual release of the qCAW concentrated in the top 2 addresses — about 97% of the supply — so it never floods the market all at once</li>
+    </ul>
+    <p><strong>Important ground rules</strong></p>
+    <ul>
+      <li>No one's balance will be deleted or rewritten unilaterally. Major changes — including any gradual release — will only happen with the community's agreement (a vote).</li>
+      <li>A fork only takes effect if validators and users move to it. The old chain will also continue to exist.</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>The tokens: cqCAW and 42CAW</h2>
+    <p>Two tokens were deployed on November 16, 2026: <strong>cqCAW (Community qCAW)</strong> on
+      QL1 and <strong>42CAW</strong> on 42 Chain — both at the same contract address,
+      0x21aDfA6EbAA11cC25C38AD6aA00302527c519ee8. Their supplies are fixed
+      (646,228,401,676,033.907898028447996533 and 666,666,666,666,666), with no further minting and
+      no admin, and the entire supply of each is held by one wallet:
+      0x2A455cF58739885E1665128937AC1a76cee8EF0f.</p>
+    <p><strong>What changed on November 17:</strong> these tokens were deployed as the carriers of
+      the proposed migration route (eCAW → cqCAW → 42CAW, below). With the fork decision, that
+      migration and conversion plan is superseded — it is a past proposal, not the current plan.
+      The tokens themselves remain deployed on-chain, exactly as they are. No migration, conversion
+      or airdrop has started, and what role these tokens play from here has not been decided.</p>
+    <div class="problem"><strong>An open problem, stated plainly:</strong> BE controls a large part
+      of the qCAW supply — about 97% of it sits in the top 2 addresses. This is unresolved. The
+      fork makes it possible to design a gradual release, but only with the community's agreement
+      (a vote) — see the ground rules above.</div>
+  </section>
+
+  <section class="card">
+    <h2>Looking back: the 42 Chain proposal (Nov 14–16, 2026)</h2>
+    <p>Until November 16, the main line under discussion was a move to 42 Chain. That discussion is
+      kept here as history — it is no longer the current plan, and the 42 Chain effort itself is now
+      unified under @QomLayerOne (see the decision above). The problem it set out to solve — BE's
+      owner authority over CawActions — is the same problem the fork route now takes on, on QL1
+      itself.</p>
+
+    <h3>Why 42 was proposed</h3>
+    <p>On QL1, the CawActions contract belongs to BE (backend69): its source code is not public, and it
+      sits under his owner authority. The community can use it, but cannot verify it or change it.</p>
+    <p>The premise of the discussion was: BE is not expected to act. Waiting for him is not a path.</p>
+    <p>BE deliberately left room — an unfinished margin — and a question for the community. That margin,
+      too, is part of his legacy. The answer the community discussed was 42.</p>
+    <p>If the action ledger (the record of posts and actions) moved to 42 Chain, CAW would no longer
+      run on BE's closed-source CawActions — a community-led CawActions would take its place.</p>
+
+    <h3>Ideas that were under discussion</h3>
     <ul>
       <li><strong>Community-led contracts.</strong> future is M🌙NE (@QomLayerOne) announced in the
         QL1 CAW SocialFi group that her CAW Social contracts are in testing on Infinite Drive (42 Chain),
         and that she will announce there when the production version is live. The Guppy's Guide frontend
-        has replied that it will adopt her contracts — “please wait for the implementation.”</li>
-      <li><strong>Names — the plan.</strong> The plan: holders of a QL1 Name NFT will receive the same
-        name on 42 Chain (free of charge). This is a plan — the distribution has not happened yet, and
-        how it will be carried out is still being worked out. (Free of charge is the public commitment
-        made in the group.)</li>
+        replied that it would adopt her contracts — “please wait for the implementation.”</li>
+      <li><strong>Names — the plan at the time.</strong> The plan was: holders of a QL1 Name NFT would
+        receive the same name on 42 Chain (free of charge). The distribution has not happened, and
+        how it would be carried out was still being worked out. (Free of charge was the public
+        commitment made in the group.)</li>
       <li><strong>One ledger.</strong> Under the proposal, new posts and actions would converge on the
         new 42-side CawActions as the single canonical ledger. QL1 would not disappear — its names,
         community and history would stay, and its existing CawActions would remain readable as the
@@ -165,47 +235,19 @@
     </ul>
     <div class="note"><strong>Honest status note:</strong> work on a separate, self-built version on the
       Guppy's Guide side was started, and is currently <strong>on hold</strong>.</div>
-  </section>
 
-  <section class="card">
-    <h2>Token design — under discussion</h2>
-    <p>The token design itself needs rethinking. Since this discussion began, two new tokens have
-      been deployed: <strong>cqCAW (Community qCAW)</strong> on QL1 and <strong>42CAW</strong> on
-      42 Chain — both at the same contract address,
-      0x21aDfA6EbAA11cC25C38AD6aA00302527c519ee8. Their supplies are fixed
-      (646,228,401,676,033.907898028447996533 and 666,666,666,666,666), with no further minting and
-      no admin, and the entire supply of each is held by one wallet:
-      0x2A455cF58739885E1665128937AC1a76cee8EF0f. The rest of the token design is still at the
-      planning stage, in discussion with @QomLayerOne.</p>
-    <p><strong>The details have not been decided yet.</strong> Everything below is a direction
-      being considered — there is no concrete specification: no ratios, no rates, no caps, no steps,
-      and no dates.</p>
-    <p>An idea under consideration (not decided): a merge mechanism for the existing tokens — the
-      Ethereum-edition and QL1-edition CAW. A merge is technically possible; the real design question
-      is the exchange ratio. One possible shape is to build it using the Ethereum-edition CAW deployed
-      on 42 Chain.</p>
-    <ul>
-      <li>A token merge mechanism of our own design<span class="tag">In planning</span></li>
-      <li>A mechanism to mint new CAW by burning eCAW or qCAW<span class="tag">In planning</span></li>
-    </ul>
-    <p class="muted">Both items above are plans only — not decided, and not implemented.</p>
-    <div class="problem"><strong>An open problem, stated plainly:</strong> BE controls a large part of
-      the qCAW supply. This is unresolved.</div>
-  </section>
-
-  <section class="card">
-    <h2>One proposal: the eCAW → 42CAW route</h2>
-    <p><strong>This is one proposal — not a decision.</strong> It was posted to the community on
-      Nov 15 for discussion. Since then, the two tokens on the route — cqCAW and 42CAW — have been
-      deployed (Nov 16; see the status box below). The bridge and conversion steps have not been
-      built or started: the eCAW bridge is built but not deployed, the 42-side cqCAW and the
-      conversion are design-only, and no migration, conversion or airdrop has begun. Everything not
-      yet done remains a proposal.</p>
+    <h3>One proposal: the eCAW → 42CAW route</h3>
+    <p><strong>This was one proposal — not a decision.</strong> It was posted to the community on
+      Nov 15 for discussion. The two tokens on the route — cqCAW and 42CAW — were deployed on
+      Nov 16 (see the token section above). The bridge and conversion steps were never built or
+      started: the eCAW bridge is built but not deployed, the 42-side cqCAW and the conversion are
+      design-only, and no migration, conversion or airdrop has begun. Since Nov 17, this route is a
+      past proposal — it is no longer the plan.</p>
     <p><strong>The route:</strong> eCAW (Ethereum) → bridge → community qCAW (QL1) → bridge →
       community qCAW (42 Chain) → conversion → 42CAW (42 Chain). The community qCAW would be the
       carrier across both chains, and the conversion into 42CAW would happen last, on 42 Chain. The
       bridges in between move the same token 1:1 — a rate would apply only at the conversion steps.</p>
-    <p><strong>The proposed terms:</strong></p>
+    <p><strong>The proposed terms were:</strong></p>
     <ul>
       <li>The move from eCAW is one-way — there is no bridge back, and what migrates does not return.</li>
       <li>The eCAW collected through the migration would be sold, and the proceeds would fund
@@ -216,15 +258,17 @@
         was deployed at exactly that benchmark, 646,228,401,676,033.907898028447996533.</li>
       <li>BE's wallets would not be accepted at the gate. The premise: BE will not move, and this
         design does not wait for him.</li>
-      <li>For existing qCAW holders, the proposal is an airdrop of 42CAW (snapshot-based) instead
+      <li>For existing qCAW holders, the proposal was an airdrop of 42CAW (snapshot-based) instead
         of a conversion.</li>
     </ul>
-    <p><strong>Not decided yet:</strong> how the total supply is allocated (eCAW migration /
+    <p><strong>Not decided:</strong> how the total supply is allocated (eCAW migration /
       community qCAW / the airdrop to existing qCAW holders), and when conversion would start.
-      <strong>The conversion rate's shape has been designed:</strong> a smooth, gentle decrease
+      <strong>The conversion rate's shape was designed:</strong> a smooth, gentle decrease
       from 1.30 down to 0.95 (42CAW per cqCAW) across the whole conversion, with a per-address
       cap of 1% of the total — converting early would pay only slightly more, and no single
-      holder could sweep the pot.</p>
+      holder could sweep the pot. Token-merge ideas (a merge mechanism of our own design; minting
+      new CAW by burning eCAW or qCAW) were also discussed in this period, at the planning stage
+      only — not decided, and not implemented.</p>
   </section>
 
   <section class="card">
@@ -252,21 +296,45 @@
         his ground is the CAW manifesto's lore alone. Recorded here as an open point of debate. The
         token-design rethink is raised the same morning, in planning-stage talks with @QomLayerOne.
       </li>
+      <li>
+        <span class="date">Nov 16, 2026</span>
+        In Zaphod HQ, MT says BE and BP are a dead end: the community should take over, and wait for
+        no one. Building is fine, he says — but a token should not be launched directly, and the
+        eCAW bridge can be switched on when it is needed. The same night, MT joins the QL1 CAW
+        SocialFi group.
+      </li>
+      <li>
+        <span class="date">Nov 16, 2026</span>
+        In QOM One, a hard fork of QL1 is floated. Whoiswho backs it immediately, and Sweaty Ernie
+        supports the fork too. The fork's proponent proposes putting it to a validator vote, says he
+        may run a validator himself in order to vote, and notes that he holds 821,531,357,023 QOM
+        delegated to Zaphod.
+      </li>
+      <li>
+        <span class="date">Nov 17, 2026</span>
+        The direction is decided: CAW's main line is a community hard fork of QL1. Execution has not
+        started, and no validator vote has been held yet — the fork is the community's to carry, not
+        MT's. The 42 Chain migration leaves the main line, and by the user's decision the whole
+        42 Chain effort is unified under @QomLayerOne. cqCAW and 42CAW remain deployed; their
+        migration and conversion plan becomes a past proposal.
+      </li>
     </ul>
   </section>
 
   <div class="status">
-    <h2>Status: two tokens deployed — the migration is not operating yet</h2>
-    <p>Deployed on Nov 16: cqCAW (Community qCAW) on QL1 and 42CAW on 42 Chain — at the same
-      contract address on both chains: 0x21aDfA6EbAA11cC25C38AD6aA00302527c519ee8. Their supplies
-      are fixed (646,228,401,676,033.907898028447996533 and 666,666,666,666,666), with no further
-      minting and no admin, and the entire supply of each is held by one wallet:
-      0x2A455cF58739885E1665128937AC1a76cee8EF0f.</p>
-    <p>The migration mechanisms are not operating yet: the eCAW bridge is built but not deployed,
-      the 42-side cqCAW and the conversion are design-only, and no migration, conversion or airdrop
-      has started. The CAW social deployment on 42 Chain (a community-led CawActions) has not
-      happened either, and no date has been promised. The overall plan remains at the proposal /
-      discussion stage, and how the 42CAW total is allocated is still undecided.</p>
+    <h2>Status: direction decided — a community hard fork of QL1 (Nov 17, 2026); execution not started</h2>
+    <p>CAW's main line is a community hard fork of QL1. The direction was decided on Nov 17, 2026;
+      execution has not started, no validator vote has been held, and no date has been promised.
+      The community carries the fork — MT will not execute it. Under the fork's ground rules,
+      balances, names and posts carry over as they are, no major change is made without the
+      community's agreement (a vote), and the old chain continues.</p>
+    <p>Deployed on Nov 16 (unchanged): cqCAW (Community qCAW) on QL1 and 42CAW on 42 Chain — at the
+      same contract address on both chains: 0x21aDfA6EbAA11cC25C38AD6aA00302527c519ee8. Their
+      supplies are fixed (646,228,401,676,033.907898028447996533 and 666,666,666,666,666), with no
+      further minting and no admin, and the entire supply of each is held by one wallet:
+      0x2A455cF58739885E1665128937AC1a76cee8EF0f. Their migration and conversion plan is superseded
+      by the fork decision — a past proposal; no migration, conversion or airdrop has started. The
+      42 Chain effort is now unified under @QomLayerOne.</p>
   </div>
 
 </div>
@@ -276,13 +344,16 @@
 
   <div class="hero">
     <h1>CAW on 42</h1>
-    <p class="summary">42 Chain 上に CAW を新たにデプロイする可能性についての、コミュニティによる
-      議論。コミュニティ主導の新しい CawActions（投稿やアクションを記録するコントラクト）で、
-      特定のオーナーの支配を受けない形が議論されています。</p>
+    <p class="summary">このページは、CAW のこれからについてのコミュニティの議論を記録したものです。
+      2026年11月17日、方向が決まりました。CAW の本線は、<strong>QL1 のコミュニティ・
+      ハードフォーク</strong>です。開発者（BE）が握ったままの名前の管理権や発行の仕組みを、
+      コミュニティ自身が担うフォークによって引き継ぐ道です。42 Chain への移行は、本線では
+      なくなりました。<strong>現状：方向が決まった段階です。実行はまだ始まっておらず、
+      バリデーターの投票もまだ行われていません。</strong></p>
     <div class="chips">
       <span class="chip">コミュニティによる開発</span>
       <span class="chip">公式のサイトではありません</span>
-      <span class="chip">計画・議論の段階</span>
+      <span class="chip">2026年11月17日に方向決定——実行は未開始</span>
     </div>
     <blockquote class="charter">
       「QL1 では BE だった。Ethereum ではギルガメッシュだった。2人とも、コミュニティに問いを遺して去った。
@@ -292,70 +363,108 @@
   </div>
 
   <section class="card">
-    <h2>なぜ 42 か</h2>
-    <p>QL1 では、CawActions コントラクトは BE（backend69）のものです。ソースコードは公開されておらず、
-      彼のオーナー権限の下にあります。コミュニティは使うことはできても、検証したり変更したりはできません。</p>
-    <p>この議論の前提：BE が動くことは期待できません。彼を待ち続けることは、道ではありません。</p>
-    <p>BE は意図的に余白——未完成の部分——と、コミュニティへの問いを残しました。その余白もまた、
-      彼の遺産の一部です。コミュニティが議論している答えは 42 です。</p>
-    <p>アクションの台帳（投稿やアクションの記録）を 42 Chain に移せば、CAW は BE の非公開の
-      CawActions の上では動かなくなります。代わりに、コミュニティ主導の CawActions が置かれる
-      ことになります。</p>
+    <h2>決定：QL1 のコミュニティ・ハードフォーク</h2>
+    <p>2026年11月17日、下に記録した議論を経て、方向が決まりました。CAW は QL1 で進みます。
+      方法は、コミュニティが担うハードフォークです。答えるべき問題は、このページが最初から
+      挙げてきたものと同じです。現在の QL1 では、CawActions コントラクト、名前の管理、
+      発行の仕組みのすべてが開発者 BE の権限の下にあります。ソースコードは公開されておらず、
+      他の誰にも直したり変えたりはできません。</p>
+    <p><strong>現状を正直に書きます：</strong>決まったのは方向だけです。実行はまだ始まって
+      いません。バリデーターの投票もまだ行われていません。フォークを実行するのは MT では
+      ありません。担うのはコミュニティです。フォークは、バリデーターと利用者が移って初めて
+      成立します。旧チェーンは、どちらにしても残り続けます。</p>
+    <p><strong>42 Chain 側も、同じ決定で整理されました。</strong>CAW on 42 の取り組み全体——
+      @QomLayerOne（future is M🌙NE）が 42 Chain で構築・テストしてきた CAW Social コントラクトと、
+      その一連の流れ——は、@QomLayerOne のもとに一本化され、彼女のもとで続いていきます。
+      そのコントラクトは、もともと彼女のものです。この決定により、Guppy's Guide 側は
+      42 Chain の路線を彼女に全面的に委ね、自らの本線を上記の QL1 ハードフォークとします。</p>
   </section>
 
   <section class="card">
-    <h2>議論されている案</h2>
+    <h2>ハードフォークで、qCAWはどうなるの？</h2>
+    <p>今のqCAWは、名前の管理権や発行の仕組みを開発者（BE）が握ったままで、問題があっても
+      誰にも直せない状態です。ハードフォークは、それを変えるための方法です。</p>
+    <p><strong>■ あなたのqCAWは消えません</strong> — フォークは、チェーンの状態をそのまま
+      引き継ぐ仕組みです。あなたの残高、CAWの名前、投稿はそのまま残り、鍵も同じものが使えます。</p>
+    <p><strong>■ フォーク側で「できるようになること」</strong></p>
+    <ul>
+      <li>開発者が握っている管理権限（名前の管理など）を、コミュニティ側に移すこと</li>
+      <li>未検証のままだったコントラクトを、ソースが公開された検証できるものに差し替えること</li>
+      <li>qCAWの発行や裏付けの仕組みなど、開発者側が握ったままの部分を、コミュニティで決め直すこと</li>
+      <li>全体の約97%が上位2アドレスに集中しているqCAWについて、一度に市場へ流さず、段階的に放出していく仕組みを設計すること</li>
+    </ul>
+    <p><strong>■ 大事な前提</strong></p>
+    <ul>
+      <li>誰かの残高を勝手に消したり、書き換えたりはしません。段階的放出のような大きな変更も、コミュニティの合意（投票）なしには行いません</li>
+      <li>フォークは、バリデーターと利用者が移って初めて成立します。旧チェーンも残り続けます</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>トークン：cqCAW と 42CAW</h2>
+    <p>2026年11月16日に、2つのトークンがデプロイされました：QL1 上の
+      <strong>cqCAW（Community qCAW）</strong>と 42 Chain 上の <strong>42CAW</strong> で、
+      コントラクトアドレスはどちらも 0x21aDfA6EbAA11cC25C38AD6aA00302527c519ee8 です。供給量は
+      固定（646,228,401,676,033.907898028447996533 枚と 666,666,666,666,666 枚）で、追加ミントは
+      なく、管理者権限もありません。全量は1つのウォレット
+      0x2A455cF58739885E1665128937AC1a76cee8EF0f が保有しています。</p>
+    <p><strong>2026年11月17日に変わったこと：</strong>この2つのトークンは、提案されていた移行
+      ルート（eCAW → cqCAW → 42CAW、下記）の運搬役としてデプロイされたものです。フォークの
+      決定により、その移行・変換の計画は過去の案となりました——現在の計画ではありません。
+      トークン自体はオンチェーンにデプロイされたまま、その状態は変わりません。移行・変換・
+      エアドロップは始まっておらず、この先このトークンがどんな役割を持つかは、まだ決まって
+      いません。</p>
+    <div class="problem"><strong>未解決の問題を正直に書きます：</strong>qCAW の供給量の大部分を
+      BE が支配しています（全体の約97%が上位2アドレスに集中）。これは未解決です。フォークに
+      より、その段階的放出を設計できるようになりますが、それもコミュニティの合意（投票）
+      なしには行いません（上記の前提を参照）。</div>
+  </section>
+
+  <section class="card">
+    <h2>振り返り：42 Chain 案（2026年11月14日〜16日）</h2>
+    <p>11月16日まで、本線として議論されていたのは 42 Chain への移行でした。ここには歴史として
+      残します——現在の計画ではありません。42 Chain の取り組み自体は、@QomLayerOne のもとに
+      一本化されました（上記の決定を参照）。この案が解こうとした問題——BE の CawActions への
+      オーナー権限——は、フォーク路線が QL1 自身の上で引き受ける問題と同じです。</p>
+
+    <h3>なぜ 42 だったのか</h3>
+    <p>QL1 では、CawActions コントラクトは BE（backend69）のものです。ソースコードは公開されておらず、
+      彼のオーナー権限の下にあります。コミュニティは使うことはできても、検証したり変更したりはできません。</p>
+    <p>この議論の前提でした：BE が動くことは期待できません。彼を待ち続けることは、道ではありません。</p>
+    <p>BE は意図的に余白——未完成の部分——と、コミュニティへの問いを残しました。その余白もまた、
+      彼の遺産の一部です。コミュニティが議論した答えは 42 でした。</p>
+    <p>アクションの台帳（投稿やアクションの記録）を 42 Chain に移せば、CAW は BE の非公開の
+      CawActions の上では動かなくなるはずでした。代わりに、コミュニティ主導の CawActions が
+      置かれることになる、という案でした。</p>
+
+    <h3>議論されていた案</h3>
     <ul>
       <li><strong>コミュニティ主導のコントラクト。</strong>future is M🌙NE（@QomLayerOne）は
         QL1 CAW SocialFi グループで、自身の CAW Social コントラクトが Infinite Drive（42 Chain）で
         テスト中であること、本番版が公開されたらグループで知らせることを発表しました。Guppy's Guide の
-        フロントエンド側は、そのコントラクトを採用すると返答しています——「実装をお待ちください」。</li>
-      <li><strong>名前についての計画。</strong>計画：QL1 の Name NFT を持っている人には、42 Chain 上で
-        同じ名前を配布する計画です（無料）。まだ実施されておらず、配布の方法などの詳細はこれから
-        詰めます。（無料であることは、グループで公約された内容です。）</li>
+        フロントエンド側は、そのコントラクトを採用すると返答していました——「実装をお待ちください」。</li>
+      <li><strong>名前についての、当時の計画。</strong>計画では、QL1 の Name NFT を持っている人には、
+        42 Chain 上で同じ名前を配布するはずでした（無料）。配布は実施されておらず、方法などの
+        詳細は詰めている途中でした。（無料であることは、グループで公約された内容です。）</li>
       <li><strong>台帳は一本。</strong>案では、新しい投稿とアクションは、42 側の新しい CawActions に
-        正本として集約されます。QL1 が消えるわけではありません——名前、コミュニティ、履歴は残り、
+        正本として集約されるはずでした。QL1 が消えるわけではありません——名前、コミュニティ、履歴は残り、
         既存の CawActions は過去の記録として読み続けられます。</li>
     </ul>
     <div class="note"><strong>正直な現状メモ：</strong>Guppy's Guide 側でも独自版の構築を始めましたが、
       現在は<strong>保留中</strong>です。</div>
-  </section>
 
-  <section class="card">
-    <h2>トークン設計——協議中</h2>
-    <p>トークン設計そのものを見直す必要があります。その後、2つの新しいトークンがデプロイされました：
-      QL1 上の <strong>cqCAW（Community qCAW）</strong>と 42 Chain 上の <strong>42CAW</strong> で、
-      コントラクトアドレスはどちらも 0x21aDfA6EbAA11cC25C38AD6aA00302527c519ee8 です。供給量は
-      固定（646,228,401,676,033.907898028447996533 枚と 666,666,666,666,666 枚）で、追加ミントは
-      なく、管理者権限もありません。全量は1つのウォレット
-      0x2A455cF58739885E1665128937AC1a76cee8EF0f が保有しています。それ以外のトークン設計は、
-      現在も計画段階で、@QomLayerOne と話し合いをしています。</p>
-    <p><strong>詳細はまだ決まっていません。</strong>以下に書かれているのは、いずれも検討中の
-      方向性です。具体的な仕様は決まっていません——比率、レート、上限、手順、期日は一切決まっていません。</p>
-    <p>検討中のアイデア（未決定）：既存トークン（Ethereum 版と QL1 版の CAW）のマージの仕組み。
-      マージは技術的には可能で、本当の設計課題は交換比率です。42 Chain 上にデプロイされた
-      Ethereum 版 CAW を使って作る形も、候補の一つです。</p>
-    <ul>
-      <li>独自設計のトークンマージの仕組み<span class="tag">計画中</span></li>
-      <li>eCAW や qCAW をバーンすることで、新しい CAW をミントする仕組み<span class="tag">計画中</span></li>
-    </ul>
-    <p class="muted">上記の2点はいずれも計画のみで、決定しておらず、実装もされていません。</p>
-    <div class="problem"><strong>未解決の問題を正直に書きます：</strong>qCAW の供給量の大部分を
-      BE が支配しています。これは未解決です。</div>
-  </section>
-
-  <section class="card">
-    <h2>案の1つ：eCAW → 42CAW のルート</h2>
-    <p><strong>これは案の1つです——決定ではありません。</strong>11月15日にコミュニティへ投稿された
+    <h3>案の1つ：eCAW → 42CAW のルート</h3>
+    <p><strong>これは案の1つでした——決定ではありません。</strong>11月15日にコミュニティへ投稿された
       提案です。その後、ルート上の2つのトークン（cqCAW と 42CAW）はデプロイされました（11月16日、
-      下のステータス欄参照）。ただし、ブリッジと変換のステップはまだ構築・運用されていません：
+      上記のトークンの節を参照）。ただし、ブリッジと変換のステップは構築も開始もされていません：
       eCAW ブリッジは作成済みですが未デプロイ、42 側の cqCAW と変換は設計のみで、移行・変換・
-      エアドロップは始まっていません。未実施の部分は、いずれも案のままです。</p>
+      エアドロップは始まっていません。11月17日以降、このルートは過去の案です——現在の計画では
+      ありません。</p>
     <p><strong>ルート：</strong>eCAW（Ethereum）→ ブリッジ → コミュニティ版 qCAW（QL1）→ ブリッジ →
       コミュニティ版 qCAW（42 Chain）→ 変換 → 42CAW（42 Chain）。コミュニティ版 qCAW が両チェーンを
-      渡る運搬役となり、42CAW への変換は最後に 42 Chain 上で起きる想定です。途中のブリッジは同一
-      トークンの移動なので 1:1 で、レートが付くのは変換の箇所だけとする案です。</p>
-    <p><strong>提案の条件：</strong></p>
+      渡る運搬役となり、42CAW への変換は最後に 42 Chain 上で起きる想定でした。途中のブリッジは同一
+      トークンの移動なので 1:1 で、レートが付くのは変換の箇所だけとする案でした。</p>
+    <p><strong>提案の条件でした：</strong></p>
     <ul>
       <li>eCAW からの移行は一方通行とする案（戻るブリッジはない。移行したものは戻らない）</li>
       <li>移行で集まった eCAW は売却し、42CAW の流動性に充てる案——これは最初から明示する</li>
@@ -366,11 +475,14 @@
       <li>BE のウォレットは入口で受け付けない案（前提：BE は動かない。この設計は彼を待たない）</li>
       <li>既存 qCAW の保有者には、変換ではなく 42CAW のエアドロップとする案（スナップショット方式）</li>
     </ul>
-    <p><strong>まだ決まっていないこと：</strong>総量の配分（eCAW 移行分／コミュニティ版 qCAW 分／
+    <p><strong>決まらなかったこと：</strong>総量の配分（eCAW 移行分／コミュニティ版 qCAW 分／
       既存 qCAW エアドロップ分）と、変換をいつ始めるか。
-      <strong>変換レートの形は設計済みです：</strong>変換全体を通して 1 cqCAW あたり
+      <strong>変換レートの形は設計済みでした：</strong>変換全体を通して 1 cqCAW あたり
       1.30 から 0.95（42CAW）へなめらかに下がる形で、アドレスごとに総量の1%までの上限が
-      付きます。早く変換してもわずかに多いだけで、一人の大口が pot をさらうことはできません。</p>
+      付きます。早く変換してもわずかに多いだけで、一人の大口が pot をさらうことはできません。
+      トークンマージの案（独自設計のマージの仕組み、eCAW や qCAW をバーンして新しい CAW を
+      ミントする仕組み）も、この時期に計画段階でのみ議論されました——決定しておらず、
+      実装もされていません。</p>
   </section>
 
   <section class="card">
@@ -397,21 +509,44 @@
         場所は QL1 であるべき——根拠は CAW マニフェストの lore のみ。ここでは未決の論点として記録する。
         トークン設計の見直しも同日朝に挙がり、@QomLayerOne と計画段階の話し合いが続いている。
       </li>
+      <li>
+        <span class="date">2026年11月16日</span>
+        Zaphod HQ で MT が発言した：BE と BP は行き詰まっており、コミュニティが引き継ぎ、誰も待つ
+        べきではない。作ること自体はよいが、トークンを直接ローンチすべきではない。eCAW ブリッジは、
+        必要になったときに有効化できる。同日夜、MT は QL1 CAW SocialFi グループにも参加した。
+      </li>
+      <li>
+        <span class="date">2026年11月16日</span>
+        QOM One で、QL1 のハードフォークが提起された。Whoiswho が即座に支持し、Sweaty Ernie も
+        フォークを支持した。フォークの提案者は、フォークをバリデーター投票にかけることを提案し、
+        投票のために自らバリデーターになる可能性にも言及した。また、Zaphod に
+        821,531,357,023 QOM をステーキングしていることも明かした。
+      </li>
+      <li>
+        <span class="date">2026年11月17日</span>
+        方向が決まった：CAW の本線は、QL1 のコミュニティ・ハードフォークである。実行はまだ
+        始まっておらず、バリデーター投票もまだ行われていない。フォークを担うのは MT ではなく
+        コミュニティである。42 Chain への移行は本線から外れ、ユーザーの決定により、42 Chain の
+        取り組み全体は @QomLayerOne のもとに一本化された。cqCAW と 42CAW はデプロイ済みのまま
+        残るが、その移行・変換計画は過去の案となった。
+      </li>
     </ul>
   </section>
 
   <div class="status">
-    <h2>現在の状態：2つのトークンはデプロイ済み——移行はまだ始まっていません</h2>
-    <p>11月16日にデプロイ済み：QL1 上の cqCAW（Community qCAW）と 42 Chain 上の 42CAW。
+    <h2>現在の状態：方向決定——QL1 のコミュニティ・ハードフォーク（2026年11月17日）。実行は未開始</h2>
+    <p>CAW の本線は、QL1 のコミュニティ・ハードフォークです。2026年11月17日に方向が決まりました。
+      実行はまだ始まっておらず、バリデーター投票も行われておらず、期日の約束もありません。
+      フォークを担うのは MT ではなくコミュニティです。フォークの前提として、残高・名前・投稿は
+      そのまま引き継がれ、大きな変更はコミュニティの合意（投票）なしには行いません。
+      旧チェーンも残り続けます。</p>
+    <p>11月16日にデプロイ済み（変更なし）：QL1 上の cqCAW（Community qCAW）と 42 Chain 上の 42CAW。
       コントラクトアドレスは両チェーンとも 0x21aDfA6EbAA11cC25C38AD6aA00302527c519ee8 です。
       供給量は固定（646,228,401,676,033.907898028447996533 枚と 666,666,666,666,666 枚）で、
       追加ミントはなく、管理者権限もありません。全量は1つのウォレット
-      0x2A455cF58739885E1665128937AC1a76cee8EF0f が保有しています。</p>
-    <p>移行の仕組みは、まだ稼働していません：eCAW ブリッジは作成済みですが未デプロイで、
-      42 側の cqCAW と変換は設計のみ。移行・変換・エアドロップは始まっていません。
-      42 Chain 上の CAW ソーシャル（コミュニティ主導の CawActions）のデプロイもまだで、
-      期日の約束もありません。全体の計画は引き続き案・議論の段階で、42CAW の総量の配分も
-      まだ決まっていません。</p>
+      0x2A455cF58739885E1665128937AC1a76cee8EF0f が保有しています。その移行・変換計画は、
+      フォークの決定により過去の案となりました。移行・変換・エアドロップは始まっていません。
+      42 Chain の取り組みは、@QomLayerOne のもとに一本化されました。</p>
   </div>
 
 </div>
